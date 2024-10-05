@@ -1,0 +1,76 @@
+.about-container {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #3b3b58 0%, #6b6b9a 50%, #8d8da3 100%); /* Darker gradient */
+    color: #fff; /* General text color set to white for contrast */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Ensure the container fills the viewport */
+}
+
+.magic-header h1 {
+    font-size: 3rem;
+    color: #ffcc00; /* Gold color for contrast */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Dark shadow for readability */
+}
+
+.magic-header h2 {
+    font-size: 1.5rem;
+    color: #ffcc00; /* Gold color for contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.about-section {
+    margin: 30px 0;
+}
+
+.about-section h3 {
+    font-size: 1.75rem;
+    color: #ffcc00; /* Gold color for contrast */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0; /* Light gray for better readability */
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+    color: #f0f0f0; /* Light color for list items */
+}
+
+.about-section li:before {
+    content: "🌟"; /* Using a star emoji for bullet points */
+    position: absolute;
+    left: 0;
+    color: #ffcc00; /* Gold color for bullet points */
+}
+
+ul li strong {
+    color: #ffcc00; /* Gold for strong text */
+}
+
+.about-section blockquote {
+    font-style: italic;
+    color: #e0e0e0; /* Light gray for readability */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    padding: 15px;
+    border-left: 5px solid #ffcc00; /* Gold border */
+    margin: 15px 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}

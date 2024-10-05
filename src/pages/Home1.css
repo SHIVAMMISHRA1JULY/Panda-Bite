@@ -1,0 +1,49 @@
+.background-color{
+    background: linear-gradient(135deg, #3b3b58 0%, #6b6b9a 50%, #8d8da3 100%); /* Darker gradient */
+    padding: 26px;
+
+}
+
+.glow-button {
+    background-color: #007bff; /* Changed to a blue color */
+    border: none;
+    border-radius: 3px; /* Slightly less rounded corners */
+    color: #fff; /* White text color */
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 10px 20px; /* Smaller padding for a compact button */
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for shadow */
+    text-decoration: none; /* Remove underline from Link */
+    box-shadow: 0 0 5px #007bff, 0 0 10px #007bff; /* Initial glow */
+}
+
+.glow-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff; /* Enhanced glow on hover */
+}
+
+.glow-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%; /* Larger than the button */
+    height: 300%; /* Larger than the button */
+    background: rgba(0, 123, 255, 0.5); /* Blue with transparency */
+    border-radius: 50%; /* Circular shape */
+    transition: opacity 0.3s ease;
+    z-index: 0; /* Place it behind the text */
+    opacity: 0; /* Initially hidden */
+}
+
+.glow-button:hover:before {
+    opacity: 1; /* Show glow effect on hover */
+}
+
+.glow-button span {
+    position: relative; /* Position text above the glow */
+    z-index: 1; /* Bring text above the glow */
+}
