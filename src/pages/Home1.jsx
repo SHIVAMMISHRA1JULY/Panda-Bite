@@ -36,7 +36,8 @@ console.log(item)
       console.log(ans.recipe)
     }
 
-    const  handleSearch=()=>{
+    const  handleSearch=(e)=>{
+      e.preventDefault();
       let value=searchRef.current.value
       console.log(value)
 
@@ -47,10 +48,10 @@ console.log(item)
   
    
   
-   <div className='background-color'>
+   <div onSubmit={handleSearch} className='background-color'>
     <form action="" className=' flex justify-center w-[50%] m-auto gap-5 '>
       <input ref={searchRef} type="text" placeholder='Search  Recipe' className=' w-[340px] h-[30px] p-3' />
-      <button onClick={handleSearch} type='button' className='bg-violet-400 w-[100px] rounded-lg'>Search</button>
+      <button  type='submit' className='bg-violet-400 w-[100px] rounded-lg'>Search</button>
     </form>
 
 
